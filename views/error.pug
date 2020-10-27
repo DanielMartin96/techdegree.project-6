@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  p= `Error status code:  ${err.status} - Server Error`
+  p.error-p= `Error: ${err.message}`
+
+  a.home(href=`/`) Home
